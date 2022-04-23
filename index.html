@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend: 1.2</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h2>Frontend: 1.2</h2>
+    </header>
+    <main class="main-content-wrapper">
+        <div class="game-wrapper">
+            <div class="game-control-container">
+                <div class="score-panel">
+                    <div class="result-side">
+                        <span class="result" id="score-span">0</span>
+                    </div>
+                    <div class="name-side">
+                        <h3 class="name">Score</h3>
+                    </div>
+                </div>
+                <div class="score-panel">
+                    <div class="result-side">
+                        <span class="result" id="highscore-span">0</span>
+                    </div>
+                    <div class="name-side">
+                        <h3 class="name">Highscore</h3>
+                    </div>
+                </div>
+                <div class="control-btns-wrapper">
+                    <div class="control-btn-outer"><button class="control-btn" id="btn-up">↑</button></div>
+                    <div class="control-btn-outer"><button class="control-btn" id="btn-left">←</button></div>
+                    <div class="control-btn-outer"><button class="control-btn" id="btn-right">→</button></div>
+                    <div class="control-btn-outer"><button class="control-btn" id="btn-down">↓</button></div>
+                </div>
+                <!-- <div class="score-panel">
+                    <div class="result-side">
+                        <span class="result">250</span>
+                    </div>
+                    <div class="name-side">
+                        <h3 class="name">ms.</h3>
+                    </div>
+                </div> -->
+                <input type="text" placeholder="Side Length" id="side-length-input">
+                <input type="text" placeholder="Field Size" id="field-size-input">
+                <input type="text" placeholder="Move Speed" id="move-speed-input">
+                <input type="text" placeholder="Delay" id="delay-input">
+                <button class="start-btn" id="start-btn">START</button>
+            </div>
+            <div class="game-field-container">
+                <div class="canvas-container" id="canvas-container">
+                    <canvas id="game-field" width="0" height="0"></canvas>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <h2>Frontend: 1.2</h2>
+    </footer>
+
+    <div class="modal-wrapper" id="modal">
+        <div class="flex-wrapper">
+            <div class="modal">
+                <p id="info"></p>
+                <button id="modal-btn">restart</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
